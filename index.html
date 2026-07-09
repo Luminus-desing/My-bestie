@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Jenifer 💜</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+      color: #333; text-align: center; padding: 0; margin: 0;
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    }
+    .card {
+      background: white; padding: 30px; border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 550px; margin: 20px;
+    }
+    h1 { color: #8e44ad; margin: 10px 0; font-size: 28px; }
+    .fotos {
+      display: flex; gap: 10px; justify-content: center; 
+      flex-wrap: wrap; margin: 20px 0;
+    }
+    .fotos img {
+      width: 130px; height: 130px; object-fit: cover;
+      border-radius: 15px; border: 4px solid #8e44ad;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .texto { 
+      margin: 20px 0; line-height: 1.6; font-size: 17px;
+      color: #555;
+    }
+    button {
+      background: #8e44ad; color: white; border: none;
+      padding: 15px 30px; border-radius: 50px;
+      font-size: 18px; cursor: pointer; margin: 8px;
+      font-weight: bold;
+    }
+    button:hover { background: #6c3483; transform: scale(1.05); }
+    #respuesta { font-size: 20px; margin-top: 25px; font-weight: bold; color: #8e44ad; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Pa' ti, Jenifer 💜</h1>
+    
+    <!-- SUBE TUS FOTOS Y PON EL NOMBRE AQUÍ -->
+    <div class="fotos">
+      <img src="foto1.jpg" alt="Tu">
+      <img src="foto2.jpg" alt="Tu mugrosa">
+    </div>
+
+    <!-- CAMBIA ESTE TEXTO POR LO QUE QUIERAS DECIRLE -->
+    <div class="texto">
+      <p>Te hice esta página porque quería recordarte algo bien importante...</p>
+      <p><strong>¡Eres la mejor amiga que alguien podría pedir! </strong></p>
+      <p>Gracias por aguantarme, por las risas, por los chismes, por estar cuando nadie más está. Eres mi persona favorita en el mundo.</p>
+      <p>¿Prometes que vamos a seguir siendo besties hasta viejitas?</p>
+    </div>
+    
+    <button onclick="siDijo()">¡OBVIO QUE SÍ! 🫂</button>
+    <button onclick="noDijo()">NUNCA</button>
+    <div id="respuesta"></div>
+  </div>
+  
+  <script>
+    function siDijo() {
+      document.getElementById('respuesta').innerHTML = 
+        '¡LO SABÍA! besties por siempre. TQM infinito Jeni';
+    }
+    function noDijo() {
+      document.getElementById('respuesta').innerHTML = 
+        'JAJAJA no te creo nada  Ya sé que me quieres. Tú y yo por siempre';
+    }
+  </script>
+</body>
+</html>
